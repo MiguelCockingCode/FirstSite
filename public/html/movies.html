@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/tables.css">
+    <link rel="icon" href="data:,">
+    <title>Movies Table</title>
+</head>
+<body>
+    <h1 class="headbar"><a href="./menu.html">LIST ALL YOU LIKE</a></h1>
+    <h1 class="title">Movies Table</h1>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="col-status">Status</th>
+                <th class="col-rate">Rate</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for adding a new movie -->
+            <tr>
+                <td><input type="text" id="movieName" placeholder="Movie Name"></td>
+                <td>
+                    <select type="text" id="movieStatus" placeholder="Status">
+                        <option value="PLANNING">PLANNING</option>
+                        <option value="COMPLETED">COMPLETED</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="movieRate" placeholder="Rate" min="1" max="10">
+                </td>
+                <td>
+                    <button id="addMovieBtn">ADD</button>
+                    <button id="searchMovieBtn">SEARCH</button>
+                    <button id="clearMovieBtn">CLEAR</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Movie</h2>
+            <input type="text" id="editMovieName" placeholder="Movie Name"><br>
+            <select id="editMovieStatus">
+                <option value="PLANNING">PLANNING</option>
+                <option value="COMPLETED">COMPLETED</option>
+            </select>
+            <select id="editMovieRate">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            <button id="saveEditBtn">Save Changes</button>
+        </div>
+      </div>
+    <script type="text/javascript" src="../js/movieScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Basic Body Styling */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+}
+
+/* Container to center navigation */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation div {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation div:hover {
+    transform: scale(1.05);
+}
+
+.navigation h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.movies,
+.series {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.button_movies:hover,
+.button_series:hover {
+    background-color: #666;
+}
+
+#logoutBtn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}

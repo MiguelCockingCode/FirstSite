@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/tables.css">
+    <title>TV Shows Table</title>
+</head>
+<body>
+    <h1 class="headbar"><a href="./menu.html">LIST ALL YOU LIKE</a></h1>
+    <h1 class="title">TV Shows Table</h1>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="col-status">Status</th>
+                <th class="col-season">Season</th>
+                <th class="col-episode">Episode</th>
+                <th class="col-rate">Rate</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for adding a new TV Shows -->
+        </tbody>
+    </table>
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="editSerieName" placeholder="Serie Name"><br>
+            <select id="editSerieStatus">
+                <option value="PLANNING">PLANNING</option>
+                <option value="WATCHING">WATCHING</option>
+                <option value="COMPLETED">COMPLETED</option>
+            </select>
+            <input type="number" id="editSerieSeason" placeholder="Season" min="1">
+            <input type="number" id="editSerieEpisode" placeholder="Episode" min="1">
+            <select id="editSerieRate">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            <button id="saveEditBtn">Save Changes</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/seriesScript.js"></script>
+</body>
+</html>
